@@ -1,11 +1,6 @@
 // TODO: write code here
+import {Game} from './game-goblin'
 
-// comment this to pass build
-const unusedVariable = "variable";
+let fild = new Game(document.querySelector('.field'));
+fild.startGame()
 
-// for demonstration purpose only
-export default function demo(value) {
-  return `Demo: ${value}`;
-}
-
-console.log("app.js included");

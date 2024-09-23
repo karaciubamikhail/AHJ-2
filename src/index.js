@@ -1,4 +1,5 @@
-import "./css/style.css";
+import "./css/game-goblin.css";
+import "./img/goblin.png";
 
 import "./js/app";
 
