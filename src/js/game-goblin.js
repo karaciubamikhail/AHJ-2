@@ -1,4 +1,3 @@
-import "../img/goblin.png";
 export class Game {
   constructor(item) {
     this._item = item;
