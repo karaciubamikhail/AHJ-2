@@ -10,7 +10,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      images: path.resolve(__dirname, 'src/img/'),
+      images: path.resolve(__dirname, "src/img/"),
     },
   },
   module: {
@@ -36,9 +36,9 @@ module.exports = {
       },
       {
         test: /\.(gif|png|jpg|jpeg|svg)?$/,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: '/img/[name].[ext]',
+          name: "/img/[name].[ext]",
         },
       },
     ],
