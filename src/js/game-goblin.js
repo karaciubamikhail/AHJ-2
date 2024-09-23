@@ -15,7 +15,7 @@ export class Game {
     img.src = '../img/goblin.png';
     img.classList.add('img')
     console.log(img.src)
-    let interval = setInterval(()=>{
+    setInterval(()=>{
       const elementImg = document.querySelectorAll('.field-item');
       let imgs = document.querySelector('.img');
       if(imgs){
