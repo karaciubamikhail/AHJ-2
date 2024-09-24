@@ -1,4 +1,4 @@
-import imgs from '../img/goblin.png'
+import imgs from "../img/goblin.png";
 export class Game {
   constructor(item) {
     this._item = item;
@@ -18,8 +18,10 @@ export class Game {
       const elementImg = document.querySelectorAll(".field-item");
       let imgs = document.querySelector(".img");
       if (imgs) {
-        for (let i = 0; i >= elementImg.length; i++) {
-          elementImg[i].remove(imgs);
+        for (let element of elementImg) {
+          if (element.querySelector(".img")) {
+            element.remove(imgs);
+          }
         }
       }
       const position = Math.floor(Math.random() * 15);

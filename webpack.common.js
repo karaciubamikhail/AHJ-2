@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     publicPath: "",
-    assetModuleFilename: 'assets/images/[name][ext]'
+    assetModuleFilename: "assets/images/[name][ext]",
   },
   resolve: {
     alias: {
@@ -37,7 +37,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
       },
     ],
   },
