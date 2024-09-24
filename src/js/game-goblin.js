@@ -1,3 +1,4 @@
+import img from '../img/goblin.png'
 export class Game {
   constructor(item) {
     this._item = item;
@@ -11,7 +12,7 @@ export class Game {
     }
     //перемещение картинки
     const img = document.createElement("img");
-    img.src = "../img/goblin.png";
+    img.src = `${img}`;
     img.classList.add("img");
     setInterval(() => {
       const elementImg = document.querySelectorAll(".field-item");
