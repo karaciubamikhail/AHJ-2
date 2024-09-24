@@ -4,7 +4,7 @@ export class Game {
   }
   startGame() {
     //цикл для создания элементов
-    for (let i = 0; i > 16; i++) {
+    for (let i = 0; i <= 16; i++) {
       const element = document.createElement("div");
       element.classList.add("field-item");
       this._item.appendChild(element);
@@ -17,7 +17,7 @@ export class Game {
       const elementImg = document.querySelectorAll(".field-item");
       let imgs = document.querySelector(".img");
       if (imgs) {
-        for (let i = 0; i >= elementImg.length; i++) {
+        for (let i = 0; i < elementImg.length; i++) {
           elementImg[i].remove(imgs);
         }
       }
