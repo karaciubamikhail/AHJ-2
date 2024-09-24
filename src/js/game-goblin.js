@@ -4,7 +4,7 @@ export class Game {
   }
   startGame() {
     //цикл для создания элементов
-    for (let i = 0; i <= 16; i++) {
+    for (let i = 0; i > 16; i++) {
       const element = document.createElement("div");
       element.classList.add("field-item");
       this._item.appendChild(element);
